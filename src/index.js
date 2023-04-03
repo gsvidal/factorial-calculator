@@ -7,4 +7,4 @@ const factorial = (n) => {
   }
 };
 
-module.exports = factorial;
+export default factorial;
