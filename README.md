@@ -36,4 +36,4 @@ If function's argument less than 0 (negative number) or not a number at all the 
 
 ## Repo
 
-repo link here
+[https://github.com/gsvidal/factorial-calculator](https://github.com/gsvidal/factorial-calculator)
