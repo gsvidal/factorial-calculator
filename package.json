@@ -1,9 +1,8 @@
 {
   "name": "factorial-calculator",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A function that calculates the factorial of a given \"n\" number",
   "main": "dist-node/index.js",
-  "browser": "dist-browser/index.js",
   "homepage": "https://github.com/gsvidal/factorial-calculator",
   "repository": {
     "type": "git",
@@ -11,9 +10,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node",
-    "build": "npm run build-browser & npm run build-node"
+    "build": "npm run build-node"
   },
   "keywords": [
     "factorial"

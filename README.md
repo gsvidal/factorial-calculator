@@ -26,7 +26,7 @@ factorial(5); // 5*4*3*2*1 -> 120
 
 ```typescript
 
-import factorial from 'factorial-calculator/dist-browser';
+import factorial from 'factorial-calculator/src';
 
 factorial(4); // 4*3*2*1 -> 24
 
