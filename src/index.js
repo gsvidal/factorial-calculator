@@ -1,10 +1,14 @@
-const factorial = (n) => {
-  if (n >= 0) {
-    if (n === 0) return 1;
-    return n * factorial(n - 1);
-  } else {
-    console.error('Argument has to be greater or equal than zero');
-  }
+"use strict";
+exports.__esModule = true;
+var factorial = function (n) {
+    if (n >= 0) {
+        if (n === 0)
+            return 1;
+        return n * factorial(n - 1);
+    }
+    else {
+        // Is not posible (at least in math theory to calculate a negative number's factorial)
+        return NaN;
+    }
 };
-
-export default factorial;
+exports["default"] = factorial;

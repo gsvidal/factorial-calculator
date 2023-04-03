@@ -1,12 +1,14 @@
 {
   "name": "factorial-calculator",
-  "version": "1.10.0",
+  "version": "2.0.0",
   "description": "A function that calculates the factorial of a given \"n\" number",
-  "main": "lib/index.js",
-  "type": "module",
+  "main": "dist-node/index.js",
+  "browser": "dist-browser/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib"
+    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
+    "build-node": "tsc src/index.ts --outDir dist-node",
+    "build": "npm run build-browser & npm run build-node"
   },
   "keywords": [
     "factorial"
@@ -14,8 +16,6 @@
   "author": "Gonzalo Vidal",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4"
+    "typescript": "^5.0.3"
   }
 }
